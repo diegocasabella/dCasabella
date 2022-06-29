@@ -1,0 +1,431 @@
+*{
+    color: rgba(26,26,76,255);
+    font-family: 'Alatsi', sans-serif;
+
+}
+#lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: -2px 4px 10px 2px  rgb(129, 127, 127, .4 );
+
+
+}
+
+#unicornio {
+    text-align: center;
+    padding: 1rem 0;
+
+
+}
+
+
+
+#redes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    
+}
+
+#redes img {
+   padding: 2.5rem 0;
+  
+}
+
+#navegador {
+    display: flex;
+    justify-content: end;
+    padding-top: 1rem;
+
+}
+
+#navegador a {
+    padding-right: 2rem;
+    text-decoration: none;
+    font-size: x-large;
+
+}
+
+h1 {
+    font-size: 5rem;
+    padding-left: 5%;
+}
+
+body {
+    
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: rgba(247,252,255,255);
+}
+
+.grid-container {
+    display: grid;
+    margin: 0;
+    padding: 0%;
+    grid-template-columns: 10% auto ;
+    grid-template-rows: repeat(19, 100px);
+    background-color: rgba(247,252,255,255);
+
+
+}
+
+.grid-container>* {
+    display: grid;
+    
+    
+
+}
+
+aside {
+    
+    grid-column: 1 / 2;
+    grid-row: 1 / 11;
+    background-color:white;
+    z-index: 1;
+    
+    box-shadow: -2px 4px 10px 2px  rgb(129, 127, 127, .4 );
+}
+
+header {
+    width: auto;
+    grid-column: 2 / 4;
+    grid-row: 1 / 5;
+    background-color: white;
+    box-shadow: -2px 4px 10px 2px  rgb(129, 127, 127, .4 );
+    z-index: 1;
+}
+
+main {
+    grid-column: 2 / 4;
+    grid-row: 5 / 18;
+    background-color: rgba(247,252,255,255);
+   
+   
+}
+
+
+#zindex {
+    z-index: 1;
+    margin: -10rem 10rem auto auto;
+}
+
+#rojo {
+    width: 22rem;
+    height: 22rem;
+    background-color: rgba(233,32,66,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3%;
+    margin-bottom: 10rem;
+
+}
+
+#rojo img {
+    width: 40%;
+    height: 40%;
+
+
+}
+
+#cohete {
+    width: 22rem;
+    height: 22rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cohete img {
+    width: 60%;
+    height: 60%;
+}
+
+#inferior{
+    background-color: rgba(247,252,255,255);
+    margin: 0;
+   
+    
+}
+
+#desarrollo{
+    width: 30rem;
+    margin: 5rem 0rem 2rem 8rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: -2px 4px 10px 2px  rgb(129, 127, 127, .4 );
+    border-radius: 10px;
+    font-size: 1.2rem;
+
+       
+}
+#desarrollo div{
+    margin: 2.5%;
+}
+
+#desarrollo h3{
+    margin-bottom: 5%;
+}
+
+#diseño{
+    width: 30rem;
+    margin: 5rem 0rem 2rem 16rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: -2px 4px 10px 2px  rgb(129, 127, 127, .4 );
+    border-radius: 10px;
+    font-size: 1.2rem; 
+}
+
+#diseño div{
+    margin: 2.5%;
+}
+
+#sobremi{
+    margin: 7rem 0 0 8rem;
+}
+
+#sobremi h2{
+    font-size: 2rem;
+}
+
+#sobremi div{
+    width: 38rem;
+    margin-top: 1rem;
+    padding: 5rem;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: -2px 4px 10px 2px  rgb(129, 127, 127, .4 );
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+#sobremi div p{
+    margin: 1rem;
+    line-height: 3rem;
+}
+
+#sobremi div p span{
+    margin: 0 0 2rem 2rem;
+    font-weight: bolder;
+}
+
+#proyectos{
+    text-align: center;
+}
+
+#proyectos h2{
+    font-size: 2rem;
+    margin: 6rem 0 2rem 0 ;
+}
+
+#proyectos div{
+    display: flex;
+    justify-content: center;
+}
+
+#proyectos div img{
+    width: 15rem;
+    height: 15rem;
+    margin: 0 5rem;
+}
+
+picture{
+    background-color: rgba(247,252,255,255);
+}
+
+picture img{
+    max-width: 15rem;
+    mix-blend-mode: multiply; /* te pone el mismo color que el background
+    /*filter: grayscale(100%);  Saca el color a la imagen*/
+}
+
+
+
+@media all and (max-width: 1200px ) {
+   
+    aside{
+    z-index: 1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 11;
+    
+    }
+
+    header {
+        grid-column: 2 / 4;
+        grid-row: 1 / 5;
+    }
+
+    main {
+        grid-column: 1 / 4;
+        grid-row: 5 / 18;
+    }
+
+    #lateral {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: -2px 4px 10px 2px  rgb(129, 127, 127, .4 );
+        background-color:white;
+    }
+  
+
+    #redes {
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+
+    }
+
+
+    #navegador a {
+        padding-right: 1rem;
+
+    }
+
+    #zindex {
+        z-index: 1;
+        margin: -1rem 2rem auto auto;
+
+
+    }
+
+    #rojo {
+        width: 16rem;
+        height: 16rem;
+        background-color: rgba(233,32,66,255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3%;
+
+    }
+
+    #rojo img {
+        width: 40%;
+        height: 40%;
+    }
+
+    #cohete {
+        width: 16rem;
+        height: 16rem;  
+        margin-top: -7.5rem;
+    }
+
+    #cohete img {
+        width: 80%;
+        height: 80%;
+
+    
+    }
+    h1 {
+        font-size: 4rem;
+        padding: 2rem 0 0 5rem;
+    }
+
+ 
+}
+
+@media all and (max-width: 700px) {
+    aside {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        width: 100%;
+        
+
+    }
+
+    header {
+        grid-column: 1 / 4;
+        grid-row: 2 / 5;
+    }
+
+    main {
+        grid-column: 1 / 4;
+        grid-row: 5 / 19;
+        
+    }
+
+    #lateral {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    #redes {
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+
+    }
+
+
+    #lateral a img {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.5rem;
+
+
+    }
+
+    #navegador {
+        justify-content: center;
+
+    }
+
+    #navegador a {
+        padding-right: 1rem;
+
+    }
+
+    #zindex {
+        z-index: 1;
+        margin: -6rem 2rem auto auto;
+
+
+    }
+
+    #rojo {
+        width: 12rem;
+        height: 12rem;
+        background-color: rgba(233,32,66,255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3%;
+
+    }
+
+    #rojo img {
+        width: 40%;
+        height: 40%;
+    }
+
+    #cohete {
+        width: 12rem;
+        height: 12rem;
+        margin-top: 2rem;
+        
+    }
+
+    #cohete img {
+        width: 80%;
+        height: 80%;
+  
+        
+    }
+    h1 {
+        font-size: 3rem;
+        padding-top: 2rem;
+    }
+
+}
